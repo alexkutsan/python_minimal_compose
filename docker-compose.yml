@@ -1,0 +1,8 @@
+version: '2'
+services:
+  app:
+    # entrypoint: ["/usr/bin/tail", "-f", "/dev/null"] # this is an example of a command to run instead of the default entrypoint
+    build: .
+    restart: unless-stopped
+    ports:
+      - 8000:8000
